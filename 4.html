@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">返回首页</a>
+    <a href="4.html">刷新</a>
+</body>
+<script>
+    var i = prompt("输入三角形第一条条边的长度");
+    var j = prompt("输入三角形第二条条边的长度");
+    var k = prompt("输入三角形第三条条边的长度");
+    var num1 = Number(i);
+    var num2 = Number(j);
+    var num3 = Number(k);
+    if (num1+num2>num3&&num1+num3>num2&&num2+num3>num1) {
+        if (num1 == num2&&num2 == num3){
+            alert("能构成三角形，是等边三角形");
+        } else if (num1 == num2||num1 == num3||num2 == num3) {
+            alert("能构成三角形，是等腰三角形");
+        } else alert("能构成三角形，是普通三角形");
+    } else alert("不能构成三角形");
+</script>
+</html>

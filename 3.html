@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">返回首页</a>
+    <a href="3.html">刷新</a>
+</body>
+<script>
+    var i = prompt("输入一个0 到 100 之间的整数(学生的成绩)");
+    var num = Number(i);
+    if (num>=90&&num<=100) {
+        alert("该学生成绩对应等级：A");
+    } else if (num>=80&&num<=89) {
+        alert("该学生成绩对应等级：B");
+    } else if (num>=70&&num<=79) {
+        alert("该学生成绩对应等级：C");
+    } else if (num>=60&&num<=69) {
+        alert("该学生成绩对应等级：D");
+    } else if (num>=50&&num<=59) {
+        alert("该学生成绩对应等级：E");
+    } else if (num<=49) {
+        alert("该学生成绩对应等级：F");
+    } else alert("未检测到数字");
+</script>
+</html>

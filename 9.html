@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">返回首页</a>
+    <a href="9.html">刷新</a>
+</body>
+<script>
+    var x = Math.floor((Math.random()*100)+1);
+    var num = Number(prompt("输入一个 1 到 100 之间的数"));
+    while(1){
+        if (num == x) {
+            alert("猜对了！");
+            break;
+        } else if (num >x) {
+            alert("大了");
+            num=Number(prompt("请再次输入一个小于"+num+"的数"));
+        } else if (num <x) {
+            alert("小了");
+            num=Number(prompt("请再次输入一个大于"+num+" 的数"));
+        }
+    }
+</script>
+</html>

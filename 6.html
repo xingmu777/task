@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">返回首页</a>
+    <a href="6.html">刷新</a>
+</body>
+<script>
+    var n = prompt("输入一个整数n");
+    var num = Number(n);
+    for (var i=2;i<=num;i++) {
+        for (var j=2;j<=i;j++) {
+            if(j==i) {
+                console.log(i)
+            } else {
+                if(i%j==0) break;
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">返回首页</a>
+    <a href="5.html">刷新</a>
+</body>
+<script>
+    var i = prompt("输入一个年份(判断闰年)");
+    var num = Number(i);
+    if (num%4 === 0) {
+        if (num%100 === 0){
+            if (num%400 === 0) alert("是闰年");
+            else alert("不是闰年");
+        } else alert("是闰年");
+    } else alert("不是闰年");
+</script>
+</html>

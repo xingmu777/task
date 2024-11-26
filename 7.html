@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">返回首页</a>
+    <a href="7.html">刷新</a>
+</body>
+<script>
+    var num =Number(prompt("输入一个整数 n(前 n 个斐波那契数列)"));
+    var a =1,b =1,c=0;
+    console.log(a);
+    console.log(b);
+    for (var i = 0;i<num-2;i++){
+        c=a+b;
+        console.log(c);
+        a=b;
+        b=c;
+    }
+</script>
+</html>
